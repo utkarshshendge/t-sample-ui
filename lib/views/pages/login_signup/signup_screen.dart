@@ -25,7 +25,7 @@ class _SignUpPageState extends State<SignUpPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: 80,
+                height: 70,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -69,7 +69,60 @@ class _SignUpPageState extends State<SignUpPage> {
                 ),
               ),
               SizedBox(
-                height: 70,
+                height: 25,
+              ),
+              Center(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  child: Column(
+                    children: [
+                      Container(
+                        width: 76,
+                        height: 76,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black45,
+                              offset: Offset(0, 2),
+                              blurRadius: 4.0,
+                            ),
+                          ],
+                        ),
+                        child: CircleAvatar(
+                          backgroundColor:
+                              TalawaTheme.buildLightTheme().primaryColor,
+                          radius: 35,
+                          child: CircleAvatar(
+                            radius: 35,
+                            backgroundColor: Colors.white,
+                            child: Center(
+                              child: Icon(
+                                Icons.camera_alt_outlined,
+                                color: TalawaTheme.secondaryColor1
+                                    .withOpacity(0.9),
+                                size: 25,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'Add Photo',
+                        style: TextStyle(
+                            fontFamily: "CM",
+                            color: Colors.black38,
+                            fontSize: 16),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 25,
               ),
               Row(
                 children: [

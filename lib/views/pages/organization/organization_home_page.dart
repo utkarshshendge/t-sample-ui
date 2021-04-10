@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:talawa_sample_ui/views/view_models/organization_model.dart';
 import 'package:talawa_sample_ui/views/pages/organization/organization_details_page.dart';
+import 'package:talawa_sample_ui/views/view_models/post_model.dart';
 
 import '../../../app_theme.dart';
 import '../../widgets/tab_header.dart';
@@ -40,13 +42,7 @@ class _OrganizationHomePageState extends State<OrganizationHomePage> {
         ],
       ),
       body: InkWell(
-        splashColor: Colors.transparent,
-        focusColor: Colors.transparent,
-        highlightColor: Colors.transparent,
-        hoverColor: Colors.transparent,
-        onTap: () {
-          FocusScope.of(context).requestFocus(FocusNode());
-        },
+        onTap: () {},
         child: Column(
           children: <Widget>[
             Expanded(
@@ -55,6 +51,118 @@ class _OrganizationHomePageState extends State<OrganizationHomePage> {
                 headerSliverBuilder:
                     (BuildContext context, bool innerBoxIsScrolled) {
                   return <Widget>[
+                    SliverList(
+                      delegate: SliverChildBuilderDelegate(
+                          (BuildContext context, int index) {
+                        return Padding(
+                          padding: const EdgeInsets.all(15),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Container(
+                                    width: 90,
+                                    height: 90,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.black45,
+                                          offset: Offset(0, 2),
+                                          blurRadius: 8.0,
+                                        ),
+                                      ],
+                                    ),
+                                    child: CircleAvatar(
+                                      radius: 45,
+                                      backgroundColor:
+                                          TalawaTheme.secondaryColor1,
+                                      child: ClipOval(
+                                        child: Image(
+                                          height: 80,
+                                          width: 80,
+                                          image: AssetImage(
+                                              posts[0].authorImagePath),
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Row(
+                                        children: [
+                                          Icon(
+                                            FontAwesomeIcons.building,
+                                            color: TalawaTheme.secondaryColor1,
+                                          ),
+                                          SizedBox(
+                                            width: 10,
+                                          ),
+                                          Text(
+                                            '0 organizations joined',
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontFamily: "CM",
+                                                fontSize: 16),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Row(
+                                        children: [
+                                          Icon(
+                                            FontAwesomeIcons.tasks,
+                                            color: TalawaTheme
+                                                .primatyColorShadeLightShade,
+                                          ),
+                                          SizedBox(
+                                            width: 10,
+                                          ),
+                                          Text(
+                                            '0 tasks completed',
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontFamily: "CM",
+                                                fontSize: 16),
+                                          ),
+                                        ],
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                              SizedBox(
+                                height: 20,
+                              ),
+                              Text(
+                                'Bruce Wayne',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontFamily: "CM",
+                                    fontSize: 20),
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                'bwayne@batcave.com',
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 16),
+                              )
+                            ],
+                          ),
+                        );
+                      }, childCount: 1),
+                    ),
                     SliverPersistentHeader(
                       pinned: true,
                       floating: true,
