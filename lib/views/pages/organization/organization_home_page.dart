@@ -100,7 +100,7 @@ class _OrganizationHomePageState extends State<OrganizationHomePage> {
                 physics: const BouncingScrollPhysics(),
                 scrollDirection: Axis.vertical,
                 children: List<Widget>.generate(
-                  OrganizationModel.OrgList.length,
+                  OrganizationModel.orgList.length,
                   (int index) {
                     return GestureDetector(
                       onTap: () {
@@ -108,11 +108,11 @@ class _OrganizationHomePageState extends State<OrganizationHomePage> {
                           context,
                           MaterialPageRoute(
                               builder: (context) => OrganizationDetailsPage(
-                                  orgModel: OrganizationModel.OrgList[index])),
+                                  orgModel: OrganizationModel.orgList[index])),
                         );
                       },
                       child: OrgItem(
-                        orgModel: OrganizationModel.OrgList[index],
+                        orgModel: OrganizationModel.orgList[index],
                       ),
                     );
                   },

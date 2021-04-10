@@ -13,7 +13,7 @@ class OrganizationModel {
   bool ispublic;
   String adminInfo;
 
-  static List<OrganizationModel> OrgList = <OrganizationModel>[
+  static List<OrganizationModel> orgList = <OrganizationModel>[
     OrganizationModel(
         imagePath: 'assets/images/org0.png',
         title: 'Dart',

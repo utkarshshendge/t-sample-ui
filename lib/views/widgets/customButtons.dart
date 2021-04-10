@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import '../../app_theme.dart';
 
 class CustomButton extends StatelessWidget {
   final String label;
@@ -36,6 +39,49 @@ class CustomButton extends StatelessWidget {
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+class CustomShadowButton extends StatelessWidget {
+  final Icon customIcon;
+  final String label;
+
+  const CustomShadowButton(
+      {Key key, @required this.customIcon, @required this.label})
+      : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.only(left: 16, right: 16),
+      // color: Colors.white,
+      width: double.infinity,
+      height: 60,
+      // width: MediaQuery.of(context).size.width - 50,
+      decoration: BoxDecoration(
+        color: TalawaTheme.buildLightTheme().backgroundColor,
+        borderRadius: const BorderRadius.all(
+          Radius.circular(10.0),
+        ),
+        boxShadow: <BoxShadow>[
+          BoxShadow(
+              color: Colors.green.withOpacity(0.2),
+              offset: const Offset(0, 2),
+              blurRadius: 8.0),
+        ],
+      ),
+      child: Row(
+        children: [
+          customIcon,
+          SizedBox(
+            width: 20,
+          ),
+          Text(
+            label,
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          )
+        ],
       ),
     );
   }

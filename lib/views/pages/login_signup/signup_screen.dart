@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:talawa_sample_ui/app_theme.dart';
 import 'package:talawa_sample_ui/views/pages/events/events_home_page.dart';
 import 'package:talawa_sample_ui/views/pages/login_signup/login_screen.dart';
-import 'package:talawa_sample_ui/views/pages/newsfeed/newsfeed_page.dart';
-import 'package:talawa_sample_ui/views/pages/organization/organization_home_page.dart';
+import 'package:talawa_sample_ui/views/pages/profile/profile_page.dart';
 import 'package:talawa_sample_ui/views/widgets/customButtons.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -328,7 +327,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => EventsHomePage()),
+                    MaterialPageRoute(builder: (context) => ProfilePage()),
                   );
                 },
                 child: CustomButton(
