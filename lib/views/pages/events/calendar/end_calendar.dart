@@ -5,7 +5,7 @@ import 'package:talawa_sample_ui/views/pages/events/add_event.dart';
 import '../../../../app_theme.dart';
 
 class EndCalendar extends StatefulWidget {
-  final endDateCallback callback;
+  final EndDateCallback callback;
 
   const EndCalendar({Key key, this.callback}) : super(key: key);
 
@@ -107,4 +107,4 @@ class _EndCalendarState extends State<EndCalendar> {
   }
 }
 
-typedef void endDateCallback(String val);
+typedef void EndDateCallback(String val);

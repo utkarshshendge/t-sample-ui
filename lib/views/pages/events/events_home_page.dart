@@ -1,10 +1,8 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:talawa_sample_ui/views/view_models/event_model.dart';
 import 'package:talawa_sample_ui/views/pages/events/add_event.dart';
 import 'package:talawa_sample_ui/views/pages/events/event_list_item.dart';
 
-import '../../../app_theme.dart';
 import '../../../app_theme.dart';
 import '../../widgets/tab_header.dart';
 

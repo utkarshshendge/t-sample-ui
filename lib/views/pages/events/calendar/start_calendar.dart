@@ -4,7 +4,7 @@ import 'package:talawa_sample_ui/app_theme.dart';
 import 'package:talawa_sample_ui/views/pages/events/add_event.dart';
 
 class StartCalendar extends StatefulWidget {
-  final startDateCallback callback;
+  final StartDateCallback callback;
 
   const StartCalendar({Key key, this.callback}) : super(key: key);
   @override
@@ -105,4 +105,4 @@ class _StartCalendarState extends State<StartCalendar> {
   }
 }
 
-typedef void startDateCallback(String val);
+typedef void StartDateCallback(String val);
