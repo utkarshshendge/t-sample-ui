@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:talawa_sample_ui/app_theme.dart';
+import 'package:talawa_sample_ui/views/pages/bottom_nav_bar.dart';
 import 'package:talawa_sample_ui/views/pages/login_signup/signup_screen.dart';
-import 'package:talawa_sample_ui/views/pages/newsfeed/newsfeed_page.dart';
 import 'package:talawa_sample_ui/views/widgets/customButtons.dart';
 
 class LoginPage extends StatefulWidget {
@@ -173,7 +173,7 @@ class _LoginPageState extends State<LoginPage> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => NewsFeedPage()),
+                    MaterialPageRoute(builder: (context) => BottomNavScreen()),
                   );
                 },
                 child: CustomButton(

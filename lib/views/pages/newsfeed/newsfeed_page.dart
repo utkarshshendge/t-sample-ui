@@ -34,6 +34,12 @@ class _NewsFeedPageState extends State<NewsFeedPage> {
             style: TextStyle(
                 color: Colors.black87, fontFamily: 'CM', fontSize: 22),
           ),
+          actions: [
+            Image.asset(
+              'assets/images/logo.png',
+              height: 50,
+            )
+          ],
         ),
         body: Stack(
           children: <Widget>[

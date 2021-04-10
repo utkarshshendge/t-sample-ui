@@ -14,12 +14,6 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
-  List pinnedPostSlider = [
-    "assets/images/feed0.jpg",
-    "assets/images/feed1.jpg",
-    "assets/images/feed2.jpg",
-  ];
-
   final ScrollController _scrollController = ScrollController();
 
   @override

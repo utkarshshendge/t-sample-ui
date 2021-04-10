@@ -5,6 +5,8 @@ import 'package:talawa_sample_ui/views/pages/login_signup/login_screen.dart';
 import 'package:talawa_sample_ui/views/pages/profile/profile_page.dart';
 import 'package:talawa_sample_ui/views/widgets/customButtons.dart';
 
+import '../bottom_nav_bar.dart';
+
 class SignUpPage extends StatefulWidget {
   @override
   _SignUpPageState createState() => _SignUpPageState();
@@ -327,7 +329,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => ProfilePage()),
+                    MaterialPageRoute(builder: (context) => BottomNavScreen()),
                   );
                 },
                 child: CustomButton(
