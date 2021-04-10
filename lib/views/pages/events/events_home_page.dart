@@ -4,6 +4,7 @@ import 'package:talawa_sample_ui/views/pages/events/add_event.dart';
 import 'package:talawa_sample_ui/views/pages/events/event_list_item.dart';
 
 import '../../../app_theme.dart';
+import '../../../app_theme.dart';
 import '../../widgets/tab_header.dart';
 
 class EventsHomePage extends StatefulWidget {
