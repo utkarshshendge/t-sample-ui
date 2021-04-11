@@ -172,60 +172,69 @@ class _ProfilePageState extends State<ProfilePage> {
                           ),
                         ];
                       },
-                      body: Container(
-                        color: TalawaTheme.buildLightTheme().backgroundColor,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            SizedBox(
-                              height: 15,
-                            ),
-                            CustomShadowButton(
-                              customIcon: Icon(FontAwesomeIcons.userEdit),
-                              label: "Update Profile",
-                            ),
-                            SizedBox(
-                              height: 15,
-                            ),
-                            CustomShadowButton(
-                              customIcon: Icon(FontAwesomeIcons.building),
-                              label: "View Organizations",
-                            ),
-                            SizedBox(
-                              height: 15,
-                            ),
-                            CustomShadowButton(
-                              customIcon: Icon(FontAwesomeIcons.userShield),
-                              label: "Be An Admin",
-                            ),
-                            SizedBox(
-                              height: 15,
-                            ),
-                            CustomShadowButton(
-                              customIcon: Icon(FontAwesomeIcons.signOutAlt),
-                              label: "Logout",
-                            ),
-                            SizedBox(
-                              height: 15,
-                            ),
-                            Row(
-                              children: [
-                                Image.asset(
-                                  'assets/images/logo.png',
-                                  height: 50,
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                Text(
-                                  'About Talawa',
-                                  style: TextStyle(
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.bold),
-                                )
-                              ],
-                            )
-                          ],
+                      body: SingleChildScrollView(
+                        child: Container(
+                          color: TalawaTheme.buildLightTheme().backgroundColor,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              SizedBox(
+                                height: 15,
+                              ),
+                              CustomShadowButton(
+                                customIcon: Icon(FontAwesomeIcons.userEdit),
+                                label: "Update Profile",
+                              ),
+                              SizedBox(
+                                height: 15,
+                              ),
+                              CustomShadowButton(
+                                customIcon: Icon(FontAwesomeIcons.building),
+                                label: "View Organizations",
+                              ),
+                              SizedBox(
+                                height: 15,
+                              ),
+                              CustomShadowButton(
+                                customIcon: Icon(FontAwesomeIcons.userShield),
+                                label: "Switch Organization",
+                              ),
+                              SizedBox(
+                                height: 15,
+                              ),
+                              CustomShadowButton(
+                                customIcon: Icon(FontAwesomeIcons.userShield),
+                                label: "Be An Admin",
+                              ),
+                              SizedBox(
+                                height: 15,
+                              ),
+                              CustomShadowButton(
+                                customIcon: Icon(FontAwesomeIcons.signOutAlt),
+                                label: "Logout",
+                              ),
+                              SizedBox(
+                                height: 15,
+                              ),
+                              Row(
+                                children: [
+                                  Image.asset(
+                                    'assets/images/logo.png',
+                                    height: 50,
+                                  ),
+                                  SizedBox(
+                                    width: 20,
+                                  ),
+                                  Text(
+                                    'About Talawa',
+                                    style: TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold),
+                                  )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),

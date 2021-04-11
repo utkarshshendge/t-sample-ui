@@ -16,12 +16,13 @@ class _LoginPageState extends State<LoginPage> {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding:
+              const EdgeInsets.only(left: 15, right: 15, top: 10, bottom: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: 80,
+                height: 70,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -69,10 +70,12 @@ class _LoginPageState extends State<LoginPage> {
               ),
               Row(
                 children: [
-                  SizedBox(
-                      width: 60,
-                      height: 60,
-                      child: Icon(Icons.email_outlined, color: Colors.grey)),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 15),
+                    child: SizedBox(
+                        height: 60,
+                        child: Icon(Icons.email_outlined, color: Colors.grey)),
+                  ),
                   Container(
                     padding: const EdgeInsets.only(left: 16, right: 16),
                     // color: Colors.white,
@@ -120,10 +123,12 @@ class _LoginPageState extends State<LoginPage> {
               ),
               Row(
                 children: [
-                  SizedBox(
-                      width: 60,
-                      height: 60,
-                      child: Icon(Icons.visibility, color: Colors.grey)),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 15),
+                    child: SizedBox(
+                        height: 60,
+                        child: Icon(Icons.visibility, color: Colors.grey)),
+                  ),
                   Container(
                     padding: const EdgeInsets.only(left: 16, right: 16),
                     // color: Colors.white,
@@ -173,7 +178,10 @@ class _LoginPageState extends State<LoginPage> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => BottomNavScreen()),
+                    MaterialPageRoute(
+                        builder: (context) => BottomNavScreen(
+                              initialIndex: 0,
+                            )),
                   );
                 },
                 child: CustomButton(

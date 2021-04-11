@@ -5,6 +5,7 @@ import 'package:talawa_sample_ui/views/pages/login_signup/login_screen.dart';
 import 'package:talawa_sample_ui/views/pages/organization/organization_home_page.dart';
 import 'package:talawa_sample_ui/views/pages/profile/profile_page.dart';
 import 'package:talawa_sample_ui/views/widgets/customButtons.dart';
+import 'profile_pic_screen.dart';
 
 import '../bottom_nav_bar.dart';
 
@@ -20,7 +21,8 @@ class _SignUpPageState extends State<SignUpPage> {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding:
+              const EdgeInsets.only(left: 15, right: 15, top: 10, bottom: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -69,67 +71,17 @@ class _SignUpPageState extends State<SignUpPage> {
                 ),
               ),
               SizedBox(
-                height: 25,
-              ),
-              Center(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 15),
-                  child: Column(
-                    children: [
-                      Container(
-                        width: 76,
-                        height: 76,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black45,
-                              offset: Offset(0, 2),
-                              blurRadius: 4.0,
-                            ),
-                          ],
-                        ),
-                        child: CircleAvatar(
-                          backgroundColor:
-                              TalawaTheme.buildLightTheme().primaryColor,
-                          radius: 35,
-                          child: CircleAvatar(
-                            radius: 35,
-                            backgroundColor: Colors.white,
-                            child: Center(
-                              child: Icon(
-                                Icons.camera_alt_outlined,
-                                color: TalawaTheme.secondaryColor1
-                                    .withOpacity(0.9),
-                                size: 25,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Text(
-                        'Add Photo',
-                        style: TextStyle(
-                            fontFamily: "CM",
-                            color: Colors.black38,
-                            fontSize: 16),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 25,
+                height: 70,
               ),
               Row(
                 children: [
-                  SizedBox(
-                      width: 60,
-                      height: 60,
-                      child: Icon(Icons.face_outlined, color: Colors.grey)),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 15),
+                    child: SizedBox(
+                        // width: 60,
+                        height: 60,
+                        child: Icon(Icons.face_outlined, color: Colors.grey)),
+                  ),
                   Container(
                     padding: const EdgeInsets.only(left: 16, right: 16),
                     // color: Colors.white,
@@ -177,10 +129,13 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               Row(
                 children: [
-                  SizedBox(
-                      width: 60,
-                      height: 60,
-                      child: Icon(Icons.email_outlined, color: Colors.grey)),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 15),
+                    child: SizedBox(
+                        // width: 60,
+                        height: 60,
+                        child: Icon(Icons.email_outlined, color: Colors.grey)),
+                  ),
                   Container(
                     padding: const EdgeInsets.only(left: 16, right: 16),
                     // color: Colors.white,
@@ -228,10 +183,12 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               Row(
                 children: [
-                  SizedBox(
-                      width: 60,
-                      height: 60,
-                      child: Icon(Icons.phone, color: Colors.grey)),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 15),
+                    child: SizedBox(
+                        height: 60,
+                        child: Icon(Icons.phone, color: Colors.grey)),
+                  ),
                   Container(
                     padding: const EdgeInsets.only(left: 16, right: 16),
                     // color: Colors.white,
@@ -279,10 +236,12 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               Row(
                 children: [
-                  SizedBox(
-                      width: 60,
-                      height: 60,
-                      child: Icon(Icons.visibility, color: Colors.grey)),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 15),
+                    child: SizedBox(
+                        height: 60,
+                        child: Icon(Icons.visibility, color: Colors.grey)),
+                  ),
                   Container(
                     padding: const EdgeInsets.only(left: 16, right: 16),
                     // color: Colors.white,
@@ -330,10 +289,12 @@ class _SignUpPageState extends State<SignUpPage> {
               ),
               Row(
                 children: [
-                  SizedBox(
-                      width: 60,
-                      height: 60,
-                      child: Icon(Icons.lock_outlined, color: Colors.grey)),
+                  Padding(
+                    padding: const EdgeInsets.only(right: 15),
+                    child: SizedBox(
+                        height: 60,
+                        child: Icon(Icons.lock_outlined, color: Colors.grey)),
+                  ),
                   Container(
                     padding: const EdgeInsets.only(left: 16, right: 16),
                     // color: Colors.white,
@@ -379,23 +340,38 @@ class _SignUpPageState extends State<SignUpPage> {
               SizedBox(
                 height: 30,
               ),
-              GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => OrganizationHomePage()),
-                  );
-                },
-                child: CustomButton(
-                  label: 'SignUp',
-                  buttonColor: TalawaTheme.primatyColorShadeLightShade,
-                ),
-              )
             ],
           ),
         ),
       ),
+      bottomNavigationBar: Container(
+          height: 80.0,
+          decoration: BoxDecoration(
+            color: TalawaTheme.buildLightTheme().backgroundColor,
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(30.0),
+              topRight: Radius.circular(30.0),
+            ),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black12,
+                offset: Offset(0, -2),
+                blurRadius: 6.0,
+              ),
+            ],
+          ),
+          child: GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => AddProfilePicture()),
+              );
+            },
+            child: CustomButton(
+              label: 'SignUp',
+              buttonColor: TalawaTheme.primatyColorShadeLightShade,
+            ),
+          )),
     );
   }
 }

@@ -57,15 +57,22 @@ class OrgItem extends StatelessWidget {
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
                                         children: <Widget>[
-                                          Icon(
-                                            orgModel.ispublic
-                                                ? Icons.lock_open_outlined
-                                                : Icons.lock_outline,
-                                            color: TalawaTheme
-                                                .primatyColorShadeLightShade
-                                                .withOpacity(0.8),
-                                            size: 20,
-                                          ),
+                                          orgModel.ispublic
+                                              ? Icon(
+                                                  Icons.lock_open_outlined,
+                                                  color: TalawaTheme
+                                                      .primatyColorShadeLightShade
+                                                      .withOpacity(0.8),
+                                                  size: 20,
+                                                )
+                                              : Icon(
+                                                  Icons.lock_outline,
+                                                  color: TalawaTheme
+                                                          .buildLightTheme()
+                                                      .errorColor
+                                                      .withOpacity(0.8),
+                                                  size: 20,
+                                                ),
                                           Text(
                                             orgModel.ispublic
                                                 ? 'Public'

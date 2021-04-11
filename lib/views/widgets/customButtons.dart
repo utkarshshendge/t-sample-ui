@@ -44,6 +44,47 @@ class CustomButton extends StatelessWidget {
   }
 }
 
+class CustomBadgeButton extends StatelessWidget {
+  final String label;
+  final Color buttonColor;
+
+  const CustomBadgeButton(
+      {Key key, @required this.label, @required this.buttonColor})
+      : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(left: 4, right: 4, bottom: 4, top: 2),
+      child: Container(
+        height: 48,
+        decoration: BoxDecoration(
+          color: buttonColor,
+          borderRadius: const BorderRadius.all(Radius.circular(10.0)),
+          boxShadow: <BoxShadow>[
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.6),
+              blurRadius: 2,
+              offset: const Offset(2, 2),
+            ),
+          ],
+        ),
+        child: Material(
+          color: Colors.transparent,
+          child: Center(
+            child: Text(
+              label,
+              style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 18,
+                  color: Colors.white),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class CustomShadowButton extends StatelessWidget {
   final Icon customIcon;
   final String label;
@@ -66,7 +107,7 @@ class CustomShadowButton extends StatelessWidget {
         ),
         boxShadow: <BoxShadow>[
           BoxShadow(
-              color: Colors.green.withOpacity(0.2),
+              color: Colors.grey.withOpacity(0.2),
               offset: const Offset(0, 2),
               blurRadius: 8.0),
         ],

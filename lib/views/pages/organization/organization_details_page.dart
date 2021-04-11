@@ -105,7 +105,9 @@ class _OrganizationDetailsPageState extends State<OrganizationDetailsPage> {
                                 : getDetailsBoxUI(
                                     'Private',
                                     Icon(Icons.lock_outline,
-                                        color: TalawaTheme.secondaryColor1)),
+                                        color: TalawaTheme.buildLightTheme()
+                                            .errorColor
+                                            .withOpacity(.8))),
                             getDetailsBoxUI(
                                 'Not a Member',
                                 Icon(
