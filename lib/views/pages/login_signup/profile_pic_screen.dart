@@ -22,7 +22,7 @@ class _AddProfilePictureState extends State<AddProfilePicture> {
         actions: [
           InkWell(
             onTap: () {
-              Navigator.push(
+              Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
                     builder: (context) => BottomNavScreen(
@@ -142,7 +142,7 @@ class _AddProfilePictureState extends State<AddProfilePicture> {
                 ),
                 GestureDetector(
                   onTap: () {
-                    Navigator.push(
+                    Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
                           builder: (context) => BottomNavScreen(

@@ -54,7 +54,7 @@ class _EventItemState extends State<EventItem> {
                     Radius.circular(5),
                   )),
               height: 100,
-              width: 100,
+              width: 83,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -99,13 +99,6 @@ class _EventItemState extends State<EventItem> {
                       color: Colors.black,
                     ),
                   ),
-                  Text('Org: ${eventList[widget.index].organizationName}',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 13,
-                        letterSpacing: 0.27,
-                        color: Colors.black,
-                      )),
                   Text(eventList[widget.index].status,
                       style: TextStyle(
                         fontWeight: FontWeight.w600,

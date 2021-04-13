@@ -2,7 +2,6 @@ class Event {
   String eventName;
   String eventDescription;
   String coordinatorName;
-  String organizationName;
   String startDate;
   String endDate;
   String status;
@@ -14,7 +13,6 @@ class Event {
       {this.eventName,
       this.eventDescription,
       this.coordinatorName,
-      this.organizationName,
       this.startDate,
       this.endDate,
       this.status,
@@ -27,8 +25,7 @@ final List<Event> eventList = [
   Event(
     eventName: "Cleaning Week",
     coordinatorName: "Bruce Wayne",
-    organizationName: 'Wayne Services',
-    startDate: "17",
+    startDate: "17 Aug",
     endDate: "25 Aug",
     status: "1 month to start",
     isStarted: false,
@@ -38,7 +35,6 @@ final List<Event> eventList = [
   Event(
     eventName: "Gudi Padwa",
     coordinatorName: "Baburao",
-    organizationName: 'Dart',
     startDate: "30 March",
     endDate: "13 April",
     status: "5 days to end",
@@ -49,7 +45,6 @@ final List<Event> eventList = [
   Event(
     eventName: "Concert",
     coordinatorName: "Mr J",
-    organizationName: 'FD Foundation',
     startDate: "9 April",
     endDate: "13 April",
     status: "2 days to end",
@@ -60,7 +55,6 @@ final List<Event> eventList = [
   Event(
     eventName: "Speech by Musk",
     coordinatorName: "Vijay",
-    organizationName: 'GSOC',
     startDate: "13 April",
     endDate: "17 May",
     status: "20 days to start",
@@ -71,7 +65,6 @@ final List<Event> eventList = [
   Event(
     eventName: "Stage Decor",
     coordinatorName: "Mr L",
-    organizationName: 'FD Foundation',
     startDate: "10 April",
     endDate: "21 April",
     status: "7 days to start",
@@ -82,7 +75,6 @@ final List<Event> eventList = [
   Event(
     eventName: "Book Distrubution",
     coordinatorName: "Vijay",
-    organizationName: 'GSOC',
     startDate: "13 April",
     endDate: "17 May",
     status: "20 days to end",
@@ -93,7 +85,6 @@ final List<Event> eventList = [
   Event(
     eventName: "GSOC",
     coordinatorName: "Harshad Mehta",
-    organizationName: '1992',
     startDate: "9 April",
     endDate: "13 April",
     status: "2 days to start",
@@ -104,7 +95,6 @@ final List<Event> eventList = [
   Event(
     eventName: "Opening Ceremony",
     coordinatorName: "Vijay",
-    organizationName: 'PSP Foundation',
     startDate: "13 April",
     endDate: "17 May",
     status: "20 days to start",

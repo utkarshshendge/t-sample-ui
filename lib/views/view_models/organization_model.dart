@@ -1,13 +1,8 @@
 class OrganizationModel {
   OrganizationModel(
-      {this.title = '',
-      this.imagePath = '',
-      this.peopleNumber,
-      this.ispublic,
-      this.adminInfo});
+      {this.title = '', this.imagePath = '', this.ispublic, this.adminInfo});
 
   String title;
-  int peopleNumber;
 
   String imagePath;
   bool ispublic;
@@ -17,98 +12,82 @@ class OrganizationModel {
     OrganizationModel(
         imagePath: 'assets/images/org0.png',
         title: 'Dart',
-        peopleNumber: 120,
-        adminInfo: "ckasd@rain.com",
+        adminInfo: "Cj",
         ispublic: true),
     OrganizationModel(
         imagePath: 'assets/images/org1.png',
         title: 'Wayne Enterprise',
-        peopleNumber: 2,
-        adminInfo: "ckasd@rain.com",
+        adminInfo: "Justin",
         ispublic: false),
     OrganizationModel(
         imagePath: 'assets/images/org2.png',
         title: 'Flutter',
-        peopleNumber: 641,
-        adminInfo: "ckasd@rain.com",
+        adminInfo: "Bruce",
         ispublic: true),
     OrganizationModel(
         imagePath: 'assets/images/org3.png',
         title: 'NP Foundation',
-        peopleNumber: 287,
-        adminInfo: "ckasd@rain.com",
+        adminInfo: "Bond",
         ispublic: true),
     OrganizationModel(
         imagePath: 'assets/images/org0.png',
         title: 'Dart',
-        peopleNumber: 120,
-        adminInfo: "ckasd@rain.com",
+        adminInfo: "Linda",
         ispublic: true),
     OrganizationModel(
         imagePath: 'assets/images/org1.png',
         title: 'Wayne Enterprise',
-        peopleNumber: 2,
-        adminInfo: "ckasd@rain.com",
+        adminInfo: "Yoda",
         ispublic: false),
     OrganizationModel(
         imagePath: 'assets/images/org2.png',
         title: 'Flutter',
-        peopleNumber: 641,
-        adminInfo: "ckasd@rain.com",
+        adminInfo: "Homelander",
         ispublic: true),
     OrganizationModel(
         imagePath: 'assets/images/org3.png',
         title: 'NP Foundation',
-        peopleNumber: 287,
-        adminInfo: "ckasd@rain.com",
+        adminInfo: "John",
         ispublic: true),
     OrganizationModel(
         imagePath: 'assets/images/org0.png',
         title: 'Dart',
-        peopleNumber: 120,
-        adminInfo: "ckasd@rain.com",
+        adminInfo: "Miranda",
         ispublic: true),
     OrganizationModel(
         imagePath: 'assets/images/org1.png',
         title: 'Wayne Enterprise',
-        peopleNumber: 2,
-        adminInfo: "ckasd@rain.com",
+        adminInfo: "Jonas",
         ispublic: false),
     OrganizationModel(
         imagePath: 'assets/images/org2.png',
         title: 'Flutter',
-        peopleNumber: 641,
-        adminInfo: "ckasd@rain.com",
+        adminInfo: "Optimus",
         ispublic: true),
     OrganizationModel(
         imagePath: 'assets/images/org3.png',
         title: 'NP Foundation',
-        peopleNumber: 287,
-        adminInfo: "ckasd@rain.com",
+        adminInfo: "Optimus",
         ispublic: true),
     OrganizationModel(
         imagePath: 'assets/images/org0.png',
         title: 'Dart',
-        peopleNumber: 120,
-        adminInfo: "ckasd@rain.com",
+        adminInfo: "Optimus",
         ispublic: true),
     OrganizationModel(
         imagePath: 'assets/images/org1.png',
         title: 'Wayne Enterprise',
-        peopleNumber: 2,
-        adminInfo: "ckasd@rain.com",
+        adminInfo: "Optimus",
         ispublic: false),
     OrganizationModel(
         imagePath: 'assets/images/org2.png',
         title: 'Flutter',
-        peopleNumber: 641,
-        adminInfo: "ckasd@rain.com",
+        adminInfo: "Optimus",
         ispublic: true),
     OrganizationModel(
         imagePath: 'assets/images/org3.png',
         title: 'NP Foundation',
-        peopleNumber: 287,
-        adminInfo: "ckasd@rain.com",
+        adminInfo: "Optimus",
         ispublic: true),
   ];
 }

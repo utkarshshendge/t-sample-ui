@@ -90,9 +90,9 @@ class _OrganizationDetailsPageState extends State<OrganizationDetailsPage> {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: <Widget>[
                             getDetailsBoxUI(
-                                '${widget.orgModel.peopleNumber.toString()} People',
+                                'Admin ${widget.orgModel.adminInfo}',
                                 Icon(
-                                  Icons.people,
+                                  Icons.verified_user,
                                   color: TalawaTheme.secondaryColor1,
                                 )),
                             widget.orgModel.ispublic

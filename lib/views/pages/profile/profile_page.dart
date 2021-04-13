@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:talawa_sample_ui/views/pages/login_signup/signup_screen.dart';
 import 'package:talawa_sample_ui/views/pages/newsfeed/news_feed_list_item.dart';
 import 'package:talawa_sample_ui/views/view_models/post_model.dart';
 import 'package:talawa_sample_ui/views/widgets/customButtons.dart';
@@ -196,7 +197,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                 height: 15,
                               ),
                               CustomShadowButton(
-                                customIcon: Icon(FontAwesomeIcons.userShield),
+                                customIcon: Icon(FontAwesomeIcons.exchangeAlt),
                                 label: "Switch Organization",
                               ),
                               SizedBox(
@@ -209,9 +210,18 @@ class _ProfilePageState extends State<ProfilePage> {
                               SizedBox(
                                 height: 15,
                               ),
-                              CustomShadowButton(
-                                customIcon: Icon(FontAwesomeIcons.signOutAlt),
-                                label: "Logout",
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.pushReplacement(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => SignUpPage()),
+                                  );
+                                },
+                                child: CustomShadowButton(
+                                  customIcon: Icon(FontAwesomeIcons.signOutAlt),
+                                  label: "Logout",
+                                ),
                               ),
                               SizedBox(
                                 height: 15,

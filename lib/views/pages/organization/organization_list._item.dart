@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:talawa_sample_ui/views/view_models/organization_model.dart';
 
 import '../../../app_theme.dart';
@@ -87,19 +88,22 @@ class OrgItem extends StatelessWidget {
                                         ],
                                       ),
                                     ),
+                                    SizedBox(
+                                      height: 5,
+                                    ),
                                     Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.spaceBetween,
                                       children: [
                                         Icon(
-                                          Icons.people,
+                                          FontAwesomeIcons.userShield,
                                           color: TalawaTheme
                                               .primatyColorShadeLightShade
                                               .withOpacity(0.8),
                                           size: 20,
                                         ),
                                         Text(
-                                          '${orgModel.peopleNumber} people',
+                                          '${orgModel.adminInfo}',
                                           textAlign: TextAlign.left,
                                           style: TextStyle(
                                             fontWeight: FontWeight.w200,
