@@ -14,6 +14,19 @@ class TalawaTheme {
     );
   }
 
+  static Decoration textBoxDecoration = BoxDecoration(
+    color: Color(0xFFFFFFFF),
+    borderRadius: const BorderRadius.all(
+      Radius.circular(10.0),
+    ),
+    boxShadow: <BoxShadow>[
+      BoxShadow(
+          color: Colors.grey.withOpacity(0.3),
+          offset: const Offset(0, 2),
+          blurRadius: 8.0),
+    ],
+  );
+
   static ThemeData buildLightTheme() {
     final Color primaryColor = Color(0xff31BC6B);
     final Color secondaryColor = Color(0xffFFBD59);

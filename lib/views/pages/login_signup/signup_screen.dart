@@ -4,8 +4,9 @@ import 'package:talawa_sample_ui/views/pages/events/events_home_page.dart';
 import 'package:talawa_sample_ui/views/pages/login_signup/login_screen.dart';
 import 'package:talawa_sample_ui/views/pages/organization/organization_home_page.dart';
 import 'package:talawa_sample_ui/views/pages/profile/profile_page.dart';
-import 'package:talawa_sample_ui/views/widgets/customButtons.dart';
-import 'profile_pic_screen.dart';
+import 'package:talawa_sample_ui/views/widgets/custom_bottom_bar.dart';
+import 'package:talawa_sample_ui/views/widgets/custom_buttons.dart';
+import 'add_profilepic_screen.dart';
 
 import '../bottom_nav_bar.dart';
 
@@ -78,26 +79,15 @@ class _SignUpPageState extends State<SignUpPage> {
                   Padding(
                     padding: const EdgeInsets.only(right: 15),
                     child: SizedBox(
-                        // width: 60,
                         height: 60,
-                        child: Icon(Icons.face_outlined, color: Colors.grey)),
+                        child: Icon(Icons.face_outlined,
+                            color: TalawaTheme.secondaryColor1)),
                   ),
                   Container(
                     padding: const EdgeInsets.only(left: 16, right: 16),
                     // color: Colors.white,
                     width: 250,
-                    decoration: BoxDecoration(
-                      color: TalawaTheme.buildLightTheme().backgroundColor,
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                      boxShadow: <BoxShadow>[
-                        BoxShadow(
-                            color: Colors.grey.withOpacity(0.2),
-                            offset: const Offset(0, 2),
-                            blurRadius: 8.0),
-                      ],
-                    ),
+                    decoration: TalawaTheme.textBoxDecoration,
                     child: TextFormField(
                       style: TextStyle(
                         fontFamily: 'WorkSans',
@@ -134,24 +124,14 @@ class _SignUpPageState extends State<SignUpPage> {
                     child: SizedBox(
                         // width: 60,
                         height: 60,
-                        child: Icon(Icons.email_outlined, color: Colors.grey)),
+                        child: Icon(Icons.email_outlined,
+                            color: TalawaTheme.secondaryColor1)),
                   ),
                   Container(
                     padding: const EdgeInsets.only(left: 16, right: 16),
                     // color: Colors.white,
                     width: 250,
-                    decoration: BoxDecoration(
-                      color: TalawaTheme.buildLightTheme().backgroundColor,
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                      boxShadow: <BoxShadow>[
-                        BoxShadow(
-                            color: Colors.grey.withOpacity(0.2),
-                            offset: const Offset(0, 2),
-                            blurRadius: 8.0),
-                      ],
-                    ),
+                    decoration: TalawaTheme.textBoxDecoration,
                     child: TextFormField(
                       style: TextStyle(
                         fontFamily: 'WorkSans',
@@ -187,24 +167,14 @@ class _SignUpPageState extends State<SignUpPage> {
                     padding: const EdgeInsets.only(right: 15),
                     child: SizedBox(
                         height: 60,
-                        child: Icon(Icons.phone, color: Colors.grey)),
+                        child: Icon(Icons.phone,
+                            color: TalawaTheme.secondaryColor1)),
                   ),
                   Container(
                     padding: const EdgeInsets.only(left: 16, right: 16),
                     // color: Colors.white,
                     width: 250,
-                    decoration: BoxDecoration(
-                      color: TalawaTheme.buildLightTheme().backgroundColor,
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                      boxShadow: <BoxShadow>[
-                        BoxShadow(
-                            color: Colors.grey.withOpacity(0.2),
-                            offset: const Offset(0, 2),
-                            blurRadius: 8.0),
-                      ],
-                    ),
+                    decoration: TalawaTheme.textBoxDecoration,
                     child: TextFormField(
                       style: TextStyle(
                         fontFamily: 'WorkSans',
@@ -240,24 +210,14 @@ class _SignUpPageState extends State<SignUpPage> {
                     padding: const EdgeInsets.only(right: 15),
                     child: SizedBox(
                         height: 60,
-                        child: Icon(Icons.visibility, color: Colors.grey)),
+                        child: Icon(Icons.visibility,
+                            color: TalawaTheme.secondaryColor1)),
                   ),
                   Container(
                     padding: const EdgeInsets.only(left: 16, right: 16),
                     // color: Colors.white,
                     width: 250,
-                    decoration: BoxDecoration(
-                      color: TalawaTheme.buildLightTheme().backgroundColor,
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                      boxShadow: <BoxShadow>[
-                        BoxShadow(
-                            color: Colors.grey.withOpacity(0.2),
-                            offset: const Offset(0, 2),
-                            blurRadius: 8.0),
-                      ],
-                    ),
+                    decoration: TalawaTheme.textBoxDecoration,
                     child: TextFormField(
                       style: TextStyle(
                         fontFamily: 'WorkSans',
@@ -293,24 +253,14 @@ class _SignUpPageState extends State<SignUpPage> {
                     padding: const EdgeInsets.only(right: 15),
                     child: SizedBox(
                         height: 60,
-                        child: Icon(Icons.lock_outlined, color: Colors.grey)),
+                        child: Icon(Icons.lock_outlined,
+                            color: TalawaTheme.secondaryColor1)),
                   ),
                   Container(
                     padding: const EdgeInsets.only(left: 16, right: 16),
                     // color: Colors.white,
                     width: 250,
-                    decoration: BoxDecoration(
-                      color: TalawaTheme.buildLightTheme().backgroundColor,
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                      boxShadow: <BoxShadow>[
-                        BoxShadow(
-                            color: Colors.grey.withOpacity(0.2),
-                            offset: const Offset(0, 2),
-                            blurRadius: 8.0),
-                      ],
-                    ),
+                    decoration: TalawaTheme.textBoxDecoration,
                     child: TextFormField(
                       style: TextStyle(
                         fontFamily: 'WorkSans',
@@ -344,34 +294,20 @@ class _SignUpPageState extends State<SignUpPage> {
           ),
         ),
       ),
-      bottomNavigationBar: Container(
-          height: 80.0,
-          decoration: BoxDecoration(
-            color: TalawaTheme.buildLightTheme().backgroundColor,
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(30.0),
-              topRight: Radius.circular(30.0),
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black12,
-                offset: Offset(0, -2),
-                blurRadius: 6.0,
-              ),
-            ],
+      bottomNavigationBar: GestureDetector(
+        onTap: () {
+          Navigator.pushReplacement(
+            context,
+            MaterialPageRoute(builder: (context) => AddProfilePicture()),
+          );
+        },
+        child: CustomBottomBar(
+          child: CustomButton(
+            buttonColor: TalawaTheme.primatyColorShadeLightShade,
+            label: "Signup",
           ),
-          child: GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => AddProfilePicture()),
-              );
-            },
-            child: CustomButton(
-              label: 'SignUp',
-              buttonColor: TalawaTheme.primatyColorShadeLightShade,
-            ),
-          )),
+        ),
+      ),
     );
   }
 }

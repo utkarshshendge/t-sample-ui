@@ -54,7 +54,7 @@ class _EventItemState extends State<EventItem> {
                     Radius.circular(5),
                   )),
               height: 100,
-              width: 83,
+              width: MediaQuery.of(context).size.width - 274,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [

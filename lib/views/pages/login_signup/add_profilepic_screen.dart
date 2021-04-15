@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:talawa_sample_ui/views/pages/login_signup/login_screen.dart';
 import 'package:talawa_sample_ui/views/pages/login_signup/signup_screen.dart';
-import 'package:talawa_sample_ui/views/widgets/customButtons.dart';
+import 'package:talawa_sample_ui/views/widgets/custom_bottom_bar.dart';
+import 'package:talawa_sample_ui/views/widgets/custom_buttons.dart';
 
 import '../../../app_theme.dart';
 import '../bottom_nav_bar.dart';
@@ -124,21 +126,21 @@ class _AddProfilePictureState extends State<AddProfilePicture> {
                               )
                             ])),
                         SizedBox(
-                          height: 10,
+                          height: 15,
                         ),
                         Text(
                           'Add Photo',
                           style: TextStyle(
                               fontFamily: "CM",
-                              color: Colors.black38,
-                              fontSize: 16),
+                              color: TalawaTheme.secondaryColor1,
+                              fontSize: 20),
                         )
                       ],
                     ),
                   ),
                 ),
                 SizedBox(
-                  height: circularWidgetSize + 180,
+                  height: MediaQuery.of(context).size.width / 3,
                 ),
                 GestureDetector(
                   onTap: () {

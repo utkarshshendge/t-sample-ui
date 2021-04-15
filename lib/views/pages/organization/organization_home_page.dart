@@ -147,18 +147,7 @@ class _OrganizationHomePageState extends State<OrganizationHomePage> {
         Container(
           padding: const EdgeInsets.only(left: 16, right: 16),
           width: 250,
-          decoration: BoxDecoration(
-            color: TalawaTheme.buildLightTheme().backgroundColor,
-            borderRadius: const BorderRadius.all(
-              Radius.circular(10.0),
-            ),
-            boxShadow: <BoxShadow>[
-              BoxShadow(
-                  color: Colors.grey.withOpacity(0.2),
-                  offset: const Offset(0, 2),
-                  blurRadius: 8.0),
-            ],
-          ),
+          decoration: TalawaTheme.textBoxDecoration,
           child: Row(
             children: [
               Expanded(

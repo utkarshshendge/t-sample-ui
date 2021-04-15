@@ -57,18 +57,7 @@ class AddEventPageState extends State<AddEventPage> {
                       padding: EdgeInsets.only(left: 15, right: 15),
                       // color: Colors.white,
                       width: MediaQuery.of(context).size.width - 50,
-                      decoration: BoxDecoration(
-                        color: TalawaTheme.buildLightTheme().backgroundColor,
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(10.0),
-                        ),
-                        boxShadow: <BoxShadow>[
-                          BoxShadow(
-                              color: Colors.grey.withOpacity(0.2),
-                              offset: const Offset(0, 2),
-                              blurRadius: 8.0),
-                        ],
-                      ),
+                      decoration: TalawaTheme.textBoxDecoration,
                       child: TextFormField(
                         style: TextStyle(
                           fontFamily: 'WorkSans',
@@ -100,18 +89,7 @@ class AddEventPageState extends State<AddEventPage> {
                       padding: const EdgeInsets.only(left: 16, right: 16),
                       // color: Colors.white,
                       width: MediaQuery.of(context).size.width - 50,
-                      decoration: BoxDecoration(
-                        color: TalawaTheme.buildLightTheme().backgroundColor,
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(10.0),
-                        ),
-                        boxShadow: <BoxShadow>[
-                          BoxShadow(
-                              color: Colors.grey.withOpacity(0.2),
-                              offset: const Offset(0, 2),
-                              blurRadius: 8.0),
-                        ],
-                      ),
+                      decoration: TalawaTheme.textBoxDecoration,
                       child: TextFormField(
                         style: TextStyle(
                           fontFamily: 'WorkSans',
@@ -144,18 +122,7 @@ class AddEventPageState extends State<AddEventPage> {
                       padding: const EdgeInsets.only(left: 16, right: 16),
                       // color: Colors.white,
                       width: MediaQuery.of(context).size.width - 50,
-                      decoration: BoxDecoration(
-                        color: TalawaTheme.buildLightTheme().backgroundColor,
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(10.0),
-                        ),
-                        boxShadow: <BoxShadow>[
-                          BoxShadow(
-                              color: Colors.grey.withOpacity(0.2),
-                              offset: const Offset(0, 2),
-                              blurRadius: 8.0),
-                        ],
-                      ),
+                      decoration: TalawaTheme.textBoxDecoration,
                       child: TextFormField(
                         style: TextStyle(
                           fontFamily: 'WorkSans',
@@ -215,17 +182,7 @@ class AddEventPageState extends State<AddEventPage> {
                   left: 16, right: 16, bottom: 16, top: 8),
               child: Container(
                 height: 48,
-                decoration: BoxDecoration(
-                  color: TalawaTheme.buildLightTheme().primaryColor,
-                  borderRadius: const BorderRadius.all(Radius.circular(24.0)),
-                  boxShadow: <BoxShadow>[
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.6),
-                      blurRadius: 8,
-                      offset: const Offset(4, 4),
-                    ),
-                  ],
-                ),
+                decoration: TalawaTheme.textBoxDecoration,
                 child: Material(
                   color: Colors.transparent,
                   child: InkWell(

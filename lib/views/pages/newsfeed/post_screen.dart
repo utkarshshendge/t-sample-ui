@@ -201,18 +201,7 @@ class _PostPageState extends State<PostPage> {
               padding: const EdgeInsets.only(left: 16, right: 16),
               // color: Colors.white,
               width: 250,
-              decoration: BoxDecoration(
-                color: TalawaTheme.buildLightTheme().backgroundColor,
-                borderRadius: const BorderRadius.all(
-                  Radius.circular(15.0),
-                ),
-                boxShadow: <BoxShadow>[
-                  BoxShadow(
-                      color: Colors.grey.withOpacity(0.2),
-                      offset: const Offset(0, 2),
-                      blurRadius: 6.0),
-                ],
-              ),
+              decoration: TalawaTheme.textBoxDecoration,
               child: TextFormField(
                 style: TextStyle(
                   fontFamily: 'WorkSans',

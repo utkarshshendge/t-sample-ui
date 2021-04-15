@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:talawa_sample_ui/app_theme.dart';
 import 'package:talawa_sample_ui/views/pages/bottom_nav_bar.dart';
 import 'package:talawa_sample_ui/views/pages/login_signup/signup_screen.dart';
-import 'package:talawa_sample_ui/views/widgets/customButtons.dart';
+import 'package:talawa_sample_ui/views/widgets/custom_buttons.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -74,24 +74,14 @@ class _LoginPageState extends State<LoginPage> {
                     padding: const EdgeInsets.only(right: 15),
                     child: SizedBox(
                         height: 60,
-                        child: Icon(Icons.email_outlined, color: Colors.grey)),
+                        child: Icon(Icons.email_outlined,
+                            color: TalawaTheme.secondaryColor1)),
                   ),
                   Container(
                     padding: const EdgeInsets.only(left: 16, right: 16),
                     // color: Colors.white,
                     width: 250,
-                    decoration: BoxDecoration(
-                      color: TalawaTheme.buildLightTheme().backgroundColor,
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                      boxShadow: <BoxShadow>[
-                        BoxShadow(
-                            color: Colors.grey.withOpacity(0.2),
-                            offset: const Offset(0, 2),
-                            blurRadius: 8.0),
-                      ],
-                    ),
+                    decoration: TalawaTheme.textBoxDecoration,
                     child: TextFormField(
                       style: TextStyle(
                         fontFamily: 'WorkSans',
@@ -127,24 +117,14 @@ class _LoginPageState extends State<LoginPage> {
                     padding: const EdgeInsets.only(right: 15),
                     child: SizedBox(
                         height: 60,
-                        child: Icon(Icons.visibility, color: Colors.grey)),
+                        child: Icon(Icons.visibility,
+                            color: TalawaTheme.secondaryColor1)),
                   ),
                   Container(
                     padding: const EdgeInsets.only(left: 16, right: 16),
                     // color: Colors.white,
                     width: 250,
-                    decoration: BoxDecoration(
-                      color: TalawaTheme.buildLightTheme().backgroundColor,
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                      boxShadow: <BoxShadow>[
-                        BoxShadow(
-                            color: Colors.grey.withOpacity(0.2),
-                            offset: const Offset(0, 2),
-                            blurRadius: 8.0),
-                      ],
-                    ),
+                    decoration: TalawaTheme.textBoxDecoration,
                     child: TextFormField(
                       style: TextStyle(
                         fontFamily: 'WorkSans',

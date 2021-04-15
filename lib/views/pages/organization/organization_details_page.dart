@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:talawa_sample_ui/views/view_models/organization_model.dart';
-import 'package:talawa_sample_ui/views/widgets/customButtons.dart';
+import 'package:talawa_sample_ui/views/widgets/custom_bottom_bar.dart';
+import 'package:talawa_sample_ui/views/widgets/custom_buttons.dart';
 
 import '../../../app_theme.dart';
 
@@ -120,30 +121,26 @@ class _OrganizationDetailsPageState extends State<OrganizationDetailsPage> {
                           padding: const EdgeInsets.only(
                               left: 16, right: 16, top: 8, bottom: 8),
                           child: Text(
-                            'Our GSoC project is Talawa, a modular open source project to help community-based organizations such as clubs, neighborhood groups, volunteer associations, non-profits and small religious institutions manage their daily activities. Most user interaction is via a mobile app.',
-                            textAlign: TextAlign.justify,
+                            'Our organization helps App developers overcome fear of app developemet by giving them moral support. We also send them regular notifications so they can connection with time and space :)',
                             style: TextStyle(
                               fontWeight: FontWeight.w200,
-                              fontSize: 14,
+                              fontSize: 16,
                               color: TalawaTheme.grey,
                             ),
-                            maxLines: 4,
-                            overflow: TextOverflow.ellipsis,
                           ),
                         ),
-                        SizedBox(height: 150),
-                        CustomButton(
-                          label: "Already a Member",
-                          buttonColor:
-                              TalawaTheme.buildLightTheme().primaryColor,
-                        ),
-                        Spacer()
                       ],
                     ),
                   ),
                 ),
               ],
             ),
+          ),
+        ),
+        bottomNavigationBar: CustomBottomBar(
+          child: CustomButton(
+            buttonColor: TalawaTheme.primatyColorShadeLightShade,
+            label: "Join Organization",
           ),
         ),
       );

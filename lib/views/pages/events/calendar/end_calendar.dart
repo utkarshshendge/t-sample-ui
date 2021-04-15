@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 import 'package:talawa_sample_ui/views/pages/events/add_event.dart';
+import 'package:talawa_sample_ui/views/pages/events/calendar/monthList.dart';
 
 import '../../../../app_theme.dart';
 
@@ -15,20 +16,6 @@ class EndCalendar extends StatefulWidget {
 
 class _EndCalendarState extends State<EndCalendar> {
   CalendarController _controller;
-  List<String> months = [
-    'Jan',
-    'Feb',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'Aug',
-    'Sept',
-    'Oct',
-    'Nov',
-    'Dec'
-  ];
 
   @override
   void initState() {
@@ -70,7 +57,7 @@ class _EndCalendarState extends State<EndCalendar> {
                 setState(() {
                   AddEventPage.of(context).endString = date.day.toString() +
                       ' ' +
-                      months[date.month - 1] +
+                      MonthList().monthsList[date.month - 1] +
                       ' ' +
                       date.year.toString();
                   print(date);

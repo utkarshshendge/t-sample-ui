@@ -4,7 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:talawa_sample_ui/views/pages/login_signup/signup_screen.dart';
 import 'package:talawa_sample_ui/views/pages/newsfeed/news_feed_list_item.dart';
 import 'package:talawa_sample_ui/views/view_models/post_model.dart';
-import 'package:talawa_sample_ui/views/widgets/customButtons.dart';
+import 'package:talawa_sample_ui/views/widgets/custom_buttons.dart';
 import 'package:talawa_sample_ui/views/widgets/tab_header.dart';
 
 import '../../../app_theme.dart';

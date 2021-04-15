@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 class ContestTabHeader extends SliverPersistentHeaderDelegate {
   ContestTabHeader(
-    this.searchUI,
+    this.collapseBar,
   );
-  final Widget searchUI;
+  final Widget collapseBar;
 
   @override
   Widget build(
       BuildContext context, double shrinkOffset, bool overlapsContent) {
-    return searchUI;
+    return collapseBar;
   }
 
   @override

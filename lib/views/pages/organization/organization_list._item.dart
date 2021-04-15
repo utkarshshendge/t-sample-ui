@@ -23,7 +23,7 @@ class OrgItem extends StatelessWidget {
               Expanded(
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.95),
+                    color: TalawaTheme.secondaryColor1.withOpacity(0.06),
                     borderRadius: const BorderRadius.all(Radius.circular(10.0)),
                   ),
                   child: Column(
@@ -69,8 +69,7 @@ class OrgItem extends StatelessWidget {
                                               : Icon(
                                                   Icons.lock_outline,
                                                   color: TalawaTheme
-                                                          .buildLightTheme()
-                                                      .errorColor
+                                                          .SecondaryColorDarkShade
                                                       .withOpacity(0.8),
                                                   size: 20,
                                                 ),
