@@ -83,7 +83,7 @@ Its part of coding period but, If you would like to see this UI integrated integ
   * The space below the Talawa Logo will be used for "My Task" button. Tapping on this button should take users to "My Tasks" Screem user will be able to see tasks assiged to them,
   * Tapping on the event tile should take user to "Event Info Page". Wherein details about Event-members and their tasks should be present.
   * The area where the information of colors is shown hides while scrolling to give a clean look.
-  * In [Talawa Docs](https://palisadoesfoundation.github.io/talawa-docs/docs/features/events/event-overview#overall-guidanc) its written that "Thumbs up/down" is a desired feature.
+  * In [Talawa Docs](https://palisadoesfoundation.github.io/talawa-docs/docs/features/events/event-overview/#overall-guidance) its written that "Thumbs up/down" is a desired feature.
       * The dislike feels abrupt, the user may loose confidence to create another event if number of dislikes are more than number of likes. In worst case we may loose a user.
       * Making dislikes visible only to  coordinator solves the problem, but creates another problem of transparency.
       * I think we should have ratings as a form of feed-back, preferably through stars.
