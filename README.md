@@ -1,7 +1,5 @@
 # t-sample-ui
 #### Note: This is not the final UI, there is scope of improvement here. I was not able to code all the screens as I was short on time and had to submit my proposal before deadline. 
-Its part of coding period but, If you would like to see this UI integrated integrated in App or what to see multilingual support in action please feel free to contact me. I will code within 5-6 hours and present it to you.
-
 * [Screens](#screens)
     * [Signup Screen](#signup-screen)
     * [Login Screen](#login-screen)
@@ -19,7 +17,7 @@ Its part of coding period but, If you would like to see this UI integrated integ
   * Color Scheme blends perfectly with the Talawa logo.
   * The Signup Button is big and bold.
   * When user press the Signup Button, he/she will be registered and will be taken to a page to upload profile picture.
-  * After profile picture screen , user will be taken to Search/Join Organization screen.
+  * After profile picture screen, user will be taken to Search/Join Organization screen.
   * The design of page is simple, clean and it matches 2021 UI standards
  <img src="https://user-images.githubusercontent.com/57677520/114818348-479f0500-9dd9-11eb-837f-8cba561a5192.png" width=40% >
 
@@ -35,16 +33,13 @@ Its part of coding period but, If you would like to see this UI integrated integ
 ### News Feed Screen.
   * The UI is clean and minimilastic
   * I have taken inspiration from Instagram, Twitter.
-  * I have not added post/feed description.
-      * When user taps on post he/she will be taken to Post-Info page where description and comments will be visible.
-      * I have done this because so that the News Feed screen looks clean and is less disctractive.  
   * I have taken care for thr future-scope of this screen.
       * The icons, book-mark Post and Share Post are present.
       * Currently, These features are not present, but in future they may be.
       * I have taken care that the UI looks good even without these icons.
   * I have added pinned post in UI as mentioned in the [Talawa Docs](https://palisadoesfoundation.github.io/talawa-docs/docs/features/news%20feed/pinned-posts).
       * Here, the profile picture and name of person who pinned the post is visible.
-      * The pinned post are placed in carousel Slider , so they will be continously moving (Inspiration Taken from Amazon India App). 
+      * The pinned post are placed in carousel Slider, so they will be continously moving (Inspiration Taken from Amazon India App). 
       * When user taps on one of the pinned post he/she should be be taken to the Post-Info and the pinned-post should be marked as "SEEN" so the user will not be confused.
   * To give a clean look while scrolling through various post, the pinned posts will collapse with app-bar and they will hide.
   * There is a bar that remains visible while scrolling, it shows the number of pinned posts and a "top" Button 
@@ -61,7 +56,6 @@ Its part of coding period but, If you would like to see this UI integrated integ
   * I made sure that the data is conveyed pictorialy.
   * I have moved "Join Organization" button and Organization description to Organization-Details screen. 
   * Here there is a filter button which when tapped should open up a Modal Bottom Sheet which has filter options.
-  * The 
   * There is also a search bar for searching organizations.
   * If you see there is nothing above the filter button (and the search bar), I kept space in code so that this space can be used for showing App related announcemts or Ads.
       * This idea is inspired from Amazon India app.
@@ -78,9 +72,9 @@ Its part of coding period but, If you would like to see this UI integrated integ
   * A very important screen of Talawa.
   * The current Interface looks confusing.
   * The screen has lot of data, new user may get overwhelmed.
-  * In order to fix this, data should be conveyed pictorially, through a combination of Colors, Text numbers.
+  * In order to fix this, data should be conveyed pictorially, through a combination of Colors, Text, Numbers.
   * The very important data on this page is the Date. I have highlighed it so user pays more attention on it. Most people can recognize numbers even if they are not literate. 
-  * The space below the Talawa Logo will be used for "My Task" button. Tapping on this button should take users to "My Tasks" Screem user will be able to see tasks assiged to them,
+  * The space below the Talawa Logo will be used for "My Task" button. Tapping on this button should take users to "My Tasks" Screen where user will be able to see tasks assiged to them,
   * Tapping on the event tile should take user to "Event Info Page". Wherein details about Event-members and their tasks should be present.
   * The area where the information of colors is shown hides while scrolling to give a clean look.
   * In [Talawa Docs](https://palisadoesfoundation.github.io/talawa-docs/docs/features/events/event-overview/#overall-guidance) its written that "Thumbs up/down" is a desired feature.
@@ -88,7 +82,7 @@ Its part of coding period but, If you would like to see this UI integrated integ
       * Making dislikes visible only to  coordinator solves the problem, but creates another problem of transparency.
       * I think we should have ratings as a form of feed-back, preferably through stars.
        * Lets say user A is coordinator of an event ,and users B, C and D are members of that event.
-       * After completion of event , when users B, C and D open the event screen , a dialogue box should appear asking for reviews.  
+       * After completion of event , when users B, C and D open the event screen, a dialogue box should appear asking for reviews.  
       
 
  <p float="middle">
