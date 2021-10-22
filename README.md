@@ -1,5 +1,4 @@
 # t-sample-ui
-#### Note: This is not the final UI, there is scope of improvement here. I was not able to code all the screens as I was short on time and had to submit my proposal before deadline. 
 * [Screens](#screens)
     * [Signup Screen](#signup-screen)
     * [Login Screen](#login-screen)
